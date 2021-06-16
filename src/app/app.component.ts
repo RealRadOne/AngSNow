@@ -7,4 +7,9 @@ import { CoursesService } from 'src/app/courses.service'
 })
 export class AppComponent {
   title = 'AngSNow';
+  //Defining a POST Object
+  post = {
+    title: "title",
+    isFavorite: true
+  }
 }
