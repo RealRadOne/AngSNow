@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { CoursesService } from 'src/app/courses.service'
+import { FavoriteComponent } from 'src/app/favorite/favorite.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'AngSNow';
@@ -11,5 +10,9 @@ export class AppComponent {
   post = {
     title: "title",
     isFavorite: true
+  }
+
+  onFavoriteChange(){
+    console.log("Favourite");
   }
 }
